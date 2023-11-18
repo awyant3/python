@@ -4,7 +4,15 @@ class Television:
     MIN_CHANNEL = 0
     MAX_CHANNEL = 3
 
-    def __init__(self):
+    def __init__(self) -> None:
+        """
+        Initializes an instance of the Television class.
+        :param status: Boolen value of tv being on or off.
+        :param muted: Boolean value of tv being muted or not.
+        :param volume: Integer value of tv volume.
+        :param channel: Integer value of which channel tv is on.
+        :param temp_volume: Integer value used to save volume value while tv is muted. 
+        """
         self.__status = False
         self.__muted = False
         self.__volume = self.MIN_VOLUME
